@@ -54,11 +54,7 @@ const permission = {
         //   accessedRouters = filterAsyncRouter(asyncRouterMap, roles)
         // }
         var routers = []
-        // var roles = []
-        // roles = data
-        // console.log(data.roles.length)
         MenuUtils(routers, data.roles)
-        console.log(routers)
         commit('SET_ROUTERS', routers)
         resolve()
       })

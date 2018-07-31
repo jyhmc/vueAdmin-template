@@ -60,8 +60,12 @@ export default {
       return false
     },
     resolvePath(...paths) {
+      console.log('ss', ...paths)
       return path.resolve(this.basePath, ...paths)
     }
+  },
+  mounted: function () {
+    console.log(this.item)
   }
 }
 </script>
